@@ -3,6 +3,7 @@ import { FaBars } from "react-icons/fa"
 import { FaBalanceScale } from "react-icons/fa"
 import { FaRegMoneyBillAlt } from "react-icons/fa"
 import { FaPlus } from "react-icons/fa"
+import { TfiAlert } from "react-icons/tfi"
 
 export default function Navbar() {
 
@@ -73,6 +74,10 @@ export default function Navbar() {
           <div className='flex items-center gap-x-1 py-1.5 px-3 text-white text-sm bg-green'>
             <FaPlus />
             <a href=''>POS Sale</a>
+          </div>
+          <div className='relative bg-[#f5f5f5] flex items-center justify-center py-1.5 text-25 hover:cursor-pointer px-3 w-36 h-36 text-[#374767]'>
+            <TfiAlert />
+            <span className='absolute bg-red rounded-full text-10.5 px-[5px] py-[1px] text-white right-[-5px] top-[-6px]'>9</span>
           </div>
         </div>
       </div>
