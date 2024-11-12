@@ -11,6 +11,7 @@ export default {
       },
       colors: {
         'gray': '#F1F3F6',
+        'green': '#37A000'
       },
       fontSize: {
         '26': '26px',
