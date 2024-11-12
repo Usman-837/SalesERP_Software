@@ -2,6 +2,7 @@ import React from 'react'
 import { FaBars } from "react-icons/fa"
 import { FaBalanceScale } from "react-icons/fa"
 import { FaRegMoneyBillAlt } from "react-icons/fa"
+import { FaPlus } from "react-icons/fa"
 
 export default function Navbar() {
 
@@ -30,7 +31,7 @@ export default function Navbar() {
 
   return (
     <nav className='bg-white'>
-      <div className='h-61  flex items-center'>
+      <div className='h-61  flex items-center justify-between px-15'>
         {/* Sidebar Toggle */}
         <div className='py-4 px-3.5 text-26 text-[#2C3136]'>
           <FaBars />
@@ -67,6 +68,12 @@ export default function Navbar() {
             <FaRegMoneyBillAlt />
             <a href=''>Purchase</a>
           </div> */}
+        </div>
+        <div className='flex gap-x-2'>
+          <div className='flex items-center gap-x-1 py-1.5 px-3 text-white text-sm bg-green'>
+            <FaPlus />
+            <a href=''>POS Sale</a>
+          </div>
         </div>
       </div>
     </nav>

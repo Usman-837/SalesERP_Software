@@ -15,6 +15,9 @@ export default {
       },
       fontSize: {
         '26': '26px',
+      },
+      padding: {
+        '15': '15px',
       }
     },
   },
