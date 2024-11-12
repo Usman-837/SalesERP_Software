@@ -33,12 +33,12 @@ export default function Navbar() {
 
   return (
     <nav className='bg-white'>
-      <div className='h-61  flex items-center justify-between px-15'>
+      <div className='h-sixtyone flex items-center justify-between px-fifteen'>
         {/* Sidebar Toggle */}
-        <div className='py-4 px-3.5 text-26 text-[#2C3136]'>
+        <div className='py-4 px-3.5 text-twentysix text-[#2C3136]'>
           <FaBars />
         </div>
-        <div className='flex gap-x-2'>
+        <div className='flex gap-x-2 max-md:hidden'>
           {
             buttons.map((data) => {
               return (
@@ -76,11 +76,11 @@ export default function Navbar() {
             <FaPlus />
             <a href=''>POS Sale</a>
           </div>
-          <div className='relative bg-[#f5f5f5] flex items-center justify-center py-1.5 text-25 hover:cursor-pointer px-3 w-36 h-36 text-[#374767]'>
+          <div className='relative bg-[#f5f5f5] flex items-center justify-center py-1.5 text-twentyfive hover:cursor-pointer px-three w-thirtysix h-thirtysix text-[#374767]'>
             <TfiAlert />
-            <span className='absolute bg-red rounded-full text-10.5 px-[5px] py-[1px] text-white right-[-5px] top-[-6px]'>9</span>
+            <span className='absolute bg-red rounded-full text-10.5 px-five py-one text-white right-[-5px] top-[-6px]'>9</span>
           </div>
-          <div className='relative bg-[#f5f5f5] flex items-center justify-center py-1.5 text-25 hover:cursor-pointer px-3 w-36 h-36 text-[#374767]'>
+          <div className='relative bg-[#f5f5f5] flex items-center justify-center py-1.5 text-twentyfive hover:cursor-pointer px-three w-thirtysix h-thirtysix text-[#374767]'>
             <SlSettings />
           </div>
         </div>

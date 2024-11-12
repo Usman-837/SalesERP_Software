@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       height: {
-        '61': '61px',
+        'sixtyone': '61px',
+        'thirtysix': '36px',
       },
       colors: {
         'gray': '#F1F3F6',
@@ -15,21 +16,19 @@ export default {
         'red': '#E5343D'
       },
       fontSize: {
-        '26': '26px',
-        '25': '25px',
+        'twentysix': '26px',
+        'twentyfive': '25px',
         '10.5': '10.5px'
       },
       padding: {
-        '15': '15px',
-        '5': '5px',
-        '3': '3px'
+        'fifteen': '15px',
+        'five': '5px',
+        'three': '3px',
+        'one' : '1px'
       },
       width: {
-        '36': '36px',
+        'thirtysix': '36px',
       },
-      height: {
-        '36': '36px',
-      }
     },
   },
   plugins: [],
