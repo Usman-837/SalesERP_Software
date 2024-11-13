@@ -6,7 +6,7 @@ import { FaPlus } from "react-icons/fa"
 import { TfiAlert } from "react-icons/tfi"
 import { SlSettings } from "react-icons/sl"
 
-export default function Navbar() {
+export default function Header() {
 
   const buttons = [
     {
@@ -32,7 +32,7 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className='bg-white'>
+    <header className='bg-white'>
       <div className='h-sixtyone flex items-center justify-between px-fifteen'>
         {/* Sidebar Toggle */}
         <div className='py-4 px-3.5 text-twentysix text-[#2C3136]'>
@@ -85,6 +85,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </nav>
+    </header>
   )
 }
