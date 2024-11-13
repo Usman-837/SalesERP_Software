@@ -13,7 +13,8 @@ export default {
       colors: {
         'gray': '#F1F3F6',
         'green': '#37A000',
-        'red': '#E5343D'
+        'red': '#E5343D',
+        'custom-black': '#2C3136'
       },
       fontSize: {
         'twentysix': '26px',
@@ -27,8 +28,14 @@ export default {
         'one' : '1px'
       },
       width: {
-        'thirtysix': '36px',
+        'thirtysix': '36px'
       },
+      maxWidth: {
+        '250': '250px'
+      },
+      margin: {
+        '250': '250px'
+      }
     },
   },
   plugins: [],
