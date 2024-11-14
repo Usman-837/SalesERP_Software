@@ -9,6 +9,7 @@ export default {
       height: {
         'sixtyone': '61px',
         'thirtysix': '36px',
+        'fourtytwo': '42px'
       },
       colors: {
         'gray': '#F1F3F6',
@@ -34,7 +35,8 @@ export default {
         '250': '250px'
       },
       margin: {
-        '250': '250px'
+        '250': '250px',
+        'five': '5px'
       }
     },
   },
