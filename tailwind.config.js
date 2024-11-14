@@ -9,17 +9,21 @@ export default {
       height: {
         'sixtyone': '61px',
         'thirtysix': '36px',
+        'fourtytwo': '42px'
       },
       colors: {
         'gray': '#F1F3F6',
         'green': '#37A000',
         'red': '#E5343D',
-        'custom-black': '#2C3136'
+        'custom-black': '#2C3136',
+        'menucolor': '#A6A6A6'
       },
       fontSize: {
         'twentysix': '26px',
         'twentyfive': '25px',
-        '10.5': '10.5px'
+        'fifteen': '15px',
+        '10.5': '10.5px',
+        'eleven': '11px'
       },
       padding: {
         'fifteen': '15px',
@@ -34,7 +38,8 @@ export default {
         '250': '250px'
       },
       margin: {
-        '250': '250px'
+        '250': '250px',
+        'five': '5px'
       }
     },
   },
