@@ -20,7 +20,8 @@ export default {
       fontSize: {
         'twentysix': '26px',
         'twentyfive': '25px',
-        '10.5': '10.5px'
+        '10.5': '10.5px',
+        'eleven': '11px'
       },
       padding: {
         'fifteen': '15px',
