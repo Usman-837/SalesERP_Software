@@ -33,12 +33,12 @@ export default function Header() {
 
   return (
     <header className='bg-white'>
-      <div className='h-sixtyone flex items-center justify-between px-fifteen'>
+      <div className='ml-250 h-sixtyone flex items-center justify-between px-fifteen'>
         {/* Sidebar Toggle */}
-        <div className='py-4 px-3.5 text-twentysix text-[#2C3136]'>
+        <div className='py-4 px-3.5 text-twentysix text-slate-600 border-r border-slate-300'>
           <FaBars />
         </div>
-        <div className='flex gap-x-2 max-md:hidden'>
+        <div className='flex gap-x-2 max-lg:hidden'>
           {
             buttons.map((data) => {
               return (
