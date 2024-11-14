@@ -15,11 +15,13 @@ export default {
         'gray': '#F1F3F6',
         'green': '#37A000',
         'red': '#E5343D',
-        'custom-black': '#2C3136'
+        'custom-black': '#2C3136',
+        'menucolor': '#A6A6A6'
       },
       fontSize: {
         'twentysix': '26px',
         'twentyfive': '25px',
+        'fifteen': '15px',
         '10.5': '10.5px',
         'eleven': '11px'
       },

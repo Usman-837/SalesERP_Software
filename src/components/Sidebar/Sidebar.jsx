@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from "../../assets/logo.png"
 import profile from "../../assets/profile.jpg"
+import { TfiDashboard } from "react-icons/tfi"
 
 export default function Sidebar() {
   return (
@@ -22,6 +23,11 @@ export default function Sidebar() {
               <p className='text-green text-eleven'>Admin</p>
             </div>
           </div>
+        </div>
+        {/* Sidebar Menu */}
+        <div className='flex items-center text-menucolor text-fifteen py-3 pr-five pl-fifteen'>
+          <TfiDashboard className='mr-2.5'/>
+          <span>Dashboard</span>
         </div>
       </div>
     </aside>
