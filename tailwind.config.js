@@ -22,6 +22,7 @@ export default {
         'twentysix': '26px',
         'twentyfive': '25px',
         'fifteen': '15px',
+        'thirteen': '13px',
         '10.5': '10.5px',
         'eleven': '11px'
       },

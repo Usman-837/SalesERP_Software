@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
 import store from "./redux/store";
 import { closeSidebar } from "./redux/actions/sidebarActions";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 function App() {
   const dispatch = useDispatch();
@@ -31,9 +32,10 @@ function App() {
       <Header />
       <div className="flex">
         <Sidebar />
-        <div>
+        <div className="w-full">
           <Routes>
-            <Route/>
+            <Route path="/" element={<Dashboard/>}/>
+            <Route path="/dashboard" element={<Dashboard/>}/>
           </Routes>
         </div>
       </div>
