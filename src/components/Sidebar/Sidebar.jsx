@@ -8,7 +8,7 @@ export default function Sidebar() {
   const isOpen = useSelector((state) => state.sidebar.isOpen);
 
   return (
-    <aside className={`bg-custom-black fixed top-0 left-0 max-md:top-[123px] max-md:-z-40 transition-all duration-400 max-sm:max-w-screen-sm ${isOpen ? 'max-w-250 w-full' : 'w-0'}`}>
+    <aside className={`bg-custom-black fixed top-0 left-0 max-md:top-[123px] max-sm:z-40 transition-all duration-400 max-sm:max-w-screen-sm ${isOpen ? 'max-w-250 w-full' : 'w-0'}`}>
       {
         isOpen && <div className='h-svh'>
           {/* logo */}

@@ -34,7 +34,7 @@ export default function Resultcards() {
     ]
 
     return (
-        <div className='grid grid-cols-4 gap-7'>
+        <div className='grid grid-cols-4 gap-7 max-xl:grid-cols-2 max-xs:grid-cols-1'>
             {
                 resultCards.map((data) => {
                     return (
