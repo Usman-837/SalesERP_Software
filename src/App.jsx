@@ -32,7 +32,7 @@ function App() {
       <Header />
       <div className="flex">
         <Sidebar />
-        <div className="w-full">
+        <div className="w-full ml-[256px]">
           <Routes>
             <Route path="/" element={<Dashboard/>}/>
             <Route path="/dashboard" element={<Dashboard/>}/>
