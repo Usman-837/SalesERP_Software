@@ -1,24 +1,52 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Header from "./components/Header/Header"
-import Sidebar from './components/Sidebar/Sidebar'
+import React, { useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Provider, useDispatch } from "react-redux";
+import Header from "./components/Header/Header";
+import Sidebar from "./components/Sidebar/Sidebar";
+import store from "./redux/store";
+import { closeSidebar } from "./redux/actions/sidebarActions";
 
-export default function App() {
+function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 993) {
+        dispatch(closeSidebar());
+      }
+    };
+
+    // Attach resize event listener
+    window.addEventListener("resize", handleResize);
+
+    // Initial check
+    handleResize();
+
+    // Cleanup on unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, [dispatch]);
+
   return (
-    <BrowserRouter>
+    <div>
       <Header />
-      <div className='flex'>
-        {/* Sidebar */}
-        <div>
-          <Sidebar />
-        </div>
-        {/* Main Content */}
+      <div className="flex">
+        <Sidebar />
         <div>
           <Routes>
-            <Route />
+            <Route/>
           </Routes>
         </div>
       </div>
-    </BrowserRouter>
-  )
+    </div>
+  );
+}
+
+export default function Root() {
+  return (
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
+  );
 }

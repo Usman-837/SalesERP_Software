@@ -5,8 +5,12 @@ import { FaRegMoneyBillAlt } from "react-icons/fa"
 import { FaPlus } from "react-icons/fa"
 import { TfiAlert } from "react-icons/tfi"
 import { SlSettings } from "react-icons/sl"
+import { useDispatch, useSelector} from "react-redux"
+import { toggleSidebar } from "../../redux/actions/sidebarActions"
 
 export default function Header() {
+  const dispatch = useDispatch();
+  const isSidebarOpen = useSelector((state) => state.sidebar.isOpen);  
 
   const buttons = [
     {
@@ -33,9 +37,9 @@ export default function Header() {
 
   return (
     <header className='bg-white'>
-      <div className='ml-250 h-sixtyone flex items-center justify-between px-fifteen'>
+      <div className={`${isSidebarOpen ? 'ml-250' : ''} max-sm:ml-0 h-sixtyone flex items-center justify-between px-fifteen`}>
         {/* Sidebar Toggle */}
-        <div className='py-4 px-3.5 text-twentysix text-slate-600 border-r border-slate-300'>
+        <div onClick={() => dispatch(toggleSidebar())} className='py-4 px-3.5 text-twentysix text-slate-600 border-r border-slate-300'>
           <FaBars />
         </div>
         <div className='flex gap-x-2 max-lg:hidden'>
