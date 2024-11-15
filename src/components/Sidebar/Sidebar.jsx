@@ -8,11 +8,11 @@ export default function Sidebar() {
   const isOpen = useSelector((state) => state.sidebar.isOpen);
 
   return (
-    <aside className={`bg-custom-black fixed top-0 left-0 transition-all duration-400 ${isOpen ? 'max-w-250 w-full' : 'w-0'}`}>
+    <aside className={`bg-custom-black fixed top-0 left-0 max-md:top-[123px] max-md:-z-40 transition-all duration-400 max-sm:max-w-screen-sm ${isOpen ? 'max-w-250 w-full' : 'w-0'}`}>
       {
         isOpen && <div className='h-svh'>
           {/* logo */}
-          <div className='flex items-center justify-center bg-[#3E454C] px-fifteen h-sixtyone'>
+          <div className='flex items-center justify-center bg-[#3E454C] px-fifteen h-sixtyone max-md:hidden'>
             <img src={logo} className='h-fourtytwo' />
           </div>
           {/* Profile photo */}

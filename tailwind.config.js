@@ -40,6 +40,9 @@ export default {
       margin: {
         '250': '250px',
         'five': '5px'
+      },
+      screens: {
+        'xs': '480px' 
       }
     },
   },

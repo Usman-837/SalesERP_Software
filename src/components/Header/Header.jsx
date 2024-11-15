@@ -7,6 +7,7 @@ import { TfiAlert } from "react-icons/tfi"
 import { SlSettings } from "react-icons/sl"
 import { useDispatch, useSelector} from "react-redux"
 import { toggleSidebar } from "../../redux/actions/sidebarActions"
+import logo from "../../assets/logo.png"
 
 export default function Header() {
   const dispatch = useDispatch();
@@ -37,7 +38,11 @@ export default function Header() {
 
   return (
     <header className='bg-white'>
-      <div className={`${isSidebarOpen ? 'ml-250' : ''} max-sm:ml-0 h-sixtyone flex items-center justify-between px-fifteen`}>
+      {/* Logo */}
+      <div className='flex items-center justify-center bg-[#3E454C] px-fifteen h-sixtyone md:hidden'>
+            <img src={logo} className='h-fourtytwo' />
+      </div>
+      <div className={`${isSidebarOpen ? 'ml-250' : ''} max-md:ml-0 h-sixtyone flex items-center justify-between px-fifteen`}>
         {/* Sidebar Toggle */}
         <div onClick={() => dispatch(toggleSidebar())} className='py-4 px-3.5 text-twentysix text-slate-600 border-r border-slate-300'>
           <FaBars />
