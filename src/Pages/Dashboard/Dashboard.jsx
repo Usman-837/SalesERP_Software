@@ -1,5 +1,5 @@
 import React from 'react'
-import Directory from '../../components/Dashboard/directory'
+import Directory from '../../components/Dashboard/Directory'
 import Resultcards from '../../components/Dashboard/Resultcards';
 
 
