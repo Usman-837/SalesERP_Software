@@ -1,6 +1,7 @@
 import React from 'react'
 import Saleproductgraph from './Saleproductgraph'
 import { FaSearch } from "react-icons/fa"
+import Pichart from './Pichart'
 
 const Bestsaleproducts = () => {
     return (
@@ -35,6 +36,11 @@ const Bestsaleproducts = () => {
                             <a href='#'>Filter</a>
                         </div>
                     </div>
+                    {/* chart */}
+                    <div className='flex flex-col items-center justify-center gap-y-5 my-10'>
+                        <h1 className='text-[#008000] font-bold text-2xl'>Expense statement</h1>
+                        <Pichart/>
+                    </div>  
                 </div>
             </div>
         </>
