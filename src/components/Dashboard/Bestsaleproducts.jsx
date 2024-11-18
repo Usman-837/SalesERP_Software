@@ -6,9 +6,9 @@ import Pichart from './Pichart'
 const Bestsaleproducts = () => {
     return (
         <>
-            <hr className='my-5 text-slate-200' />
-            <div className='flex gap-x-8'>
-                <div className='bg-white w-3/5'>
+            <hr className='my-5 text-slate-200'/>
+            <div className='flex gap-x-8 max-xl:flex-col max-xl:gap-y-6'>
+                <div className='bg-white w-3/5 max-xl:w-full'>
                     <div className='py-2.5 p-fifteen flex justify-between border-b border-slate-300'>
                         <h4 className='text-lg text-[#374767] pb-2.5'>Best Sale Product</h4>
                         <a href='#' className='py-1.5 px-3 text-white bg-green rounded-sm'>See All</a>
@@ -18,7 +18,7 @@ const Bestsaleproducts = () => {
                     </div>
                 </div>
                 {/* Expense Statement Box */}
-                <div className='bg-white w-2/5'>
+                <div className='bg-white w-2/5 max-xl:w-full'>
                     <div className='py-2.5 px-fifteen flex border-b border-slate-300 p-fifteen'>
                         <input
                             type="text"
