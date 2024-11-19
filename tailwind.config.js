@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       height: {
+        '300': '300px',
         'sixtyone': '61px',
         'thirtysix': '36px',
         'fourtytwo': '42px'

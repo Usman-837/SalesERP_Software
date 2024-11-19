@@ -9,6 +9,29 @@ const Due = () => {
                         <h4 className='text-lg text-[#374767] pb-2.5'>Todays Sales Due</h4>
                         <a href='#' className='py-1.5 px-3 text-white bg-green rounded-sm'>See All</a>
                     </div>
+                    <div className='p-fifteen'>
+                        <div className='overflow-scroll h-300'>
+                            <table className="text-sm border w-full text-left">
+                                <tbody>
+                                    <tr className='text-[#374767]'>
+                                        <th className='border border-slate-300 p-2'>SL.</th>
+                                        <th className='border border-slate-300 p-2'>Customer Name</th>
+                                        <th className='border border-slate-300 p-2'>Voucher No</th>
+                                        <th className='border border-slate-300 p-2'>Due Amount</th>
+                                    </tr>
+                                    <tr className='bg-[#F9F9F9] text-[#374767] text-center'>
+                                        <th className='border border-slate-300 p-2' colSpan="4">
+                                            Record not found
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th className='border border-slate-300 p-2 text-[#374767]' colSpan="3">Total</th>
+                                        <td className='border border-slate-300 p-2'>$ 0.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
