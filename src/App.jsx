@@ -6,6 +6,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import store from "./redux/store";
 import { closeSidebar } from "./redux/actions/sidebarActions";
 import Dashboard from "./Pages/Dashboard/Dashboard";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const dispatch = useDispatch();
@@ -38,6 +39,7 @@ function App() {
             <Route path="/" element={<Dashboard/>}/>
             <Route path="/dashboard" element={<Dashboard/>}/>
           </Routes>
+          <Footer/>
         </div>
       </div>
     </div>
