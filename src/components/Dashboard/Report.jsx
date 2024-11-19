@@ -5,7 +5,7 @@ const Report = () => {
         <>
             <div className='my-6'>
                 {/* Sales Report */}
-                <div className='bg-white w-full'>
+                <div className='bg-white w-full border border-slate-200'>
                     <div className='py-2.5 p-fifteen flex justify-between border-b border-slate-300'>
                         <h4 className='text-lg text-[#374767] pb-2.5'>Todays Sales Report</h4>
                         <a href='#' className='py-1.5 px-3 text-white bg-green rounded-sm'>See All</a>
