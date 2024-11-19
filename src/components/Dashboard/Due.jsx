@@ -25,8 +25,8 @@ const Due = () => {
                                             Record not found
                                         </th>
                                     </tr>
-                                    <tr>
-                                        <th className='border border-slate-300 p-2 text-[#374767]' colSpan="3">Total</th>
+                                    <tr className='text-right'>
+                                        <th className='border border-slate-300 p-2 text-[#374767]' colSpan="3">Total:</th>
                                         <td className='border border-slate-300 p-2'>$ 0.00</td>
                                     </tr>
                                 </tbody>
@@ -55,8 +55,8 @@ const Due = () => {
                                             Record not found
                                         </th>
                                     </tr>
-                                    <tr>
-                                        <th className='border border-slate-300 p-2 text-[#374767]' colSpan="3">Total</th>
+                                    <tr className='text-right'>
+                                        <th className='border border-slate-300 p-2 text-[#374767]' colSpan="3">Total:</th>
                                         <td className='border border-slate-300 p-2'>$ 0.00</td>
                                     </tr>
                                 </tbody>
