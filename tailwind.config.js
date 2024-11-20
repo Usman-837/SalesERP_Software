@@ -17,7 +17,8 @@ export default {
         'green': '#37A000',
         'red': '#E5343D',
         'custom-black': '#2C3136',
-        'menucolor': '#A6A6A6'
+        'menucolor': '#A6A6A6',
+        'dropdownbg': '#1C1F22'
       },
       fontSize: {
         'twentysix': '26px',
