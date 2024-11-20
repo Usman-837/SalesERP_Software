@@ -3,24 +3,34 @@ import { FaBalanceScale } from "react-icons/fa"
 import { MdKeyboardArrowLeft } from "react-icons/md"
 import { NavLink} from 'react-router-dom'
 
-const Saledropdown = () => {
+const Productdropdown = () => {
 
     const Sale = [
         {
             id: 1,
-            title: "Manage Sale",
-            route: "/managesale"
+            title: "Category List",
+            route: "/cateforylist"
         },
         {
             id: 2,
-            title: "POS Sale",
-            route: "/possale"
+            title: "Add Unit",
+            route: "/addunit"
         },
         {
             id: 3,
-            title: "Sales Terms List",
-            route: "/salestermslist"
+            title: "Unit List",
+            route: "/unitlist"
         },
+        {
+            id: 4,
+            title: "Add Product",
+            route: "/addproduct"
+        },
+        {
+            id: 5,
+            title: "Add Product (CSV)",
+            route: "/addproductcsv"
+        }
     ]
 
     return (
@@ -31,8 +41,8 @@ const Saledropdown = () => {
                         <summary className="flex items-center justify-between gap-2 p-2 font-medium marker:content-none cursor-pointer hover:bg-[#3E454C] hover:text-white pr-3 pl-fifteen group-open:bg-[#3E454C] group-open:text-white">
                             <div className="flex items-center">
                                 <FaBalanceScale className="mr-2.5 text-lg" />
-                                <NavLink to="/sale" end>
-                                    Sale
+                                <NavLink to="/product" end>
+                                    Product
                                 </NavLink>
                             </div>
                             <MdKeyboardArrowLeft className="w-5 h-5 text-gray-500 transition-transform duration-500 ease-in-out group-open:rotate-[-90deg]" />
@@ -43,7 +53,7 @@ const Saledropdown = () => {
                             <ul className="flex flex-col border-l border-[#3B4648] pt-five">
                                 <li className="relative pl-5 py-five pr-five">
                                     <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
-                                    <NavLink to="/newsale" end className='hover:text-white'>New Sale</NavLink>
+                                    <NavLink to="/newsale" end className='hover:text-white'>Add Category</NavLink>
                                 </li>
                             </ul>
                             {
@@ -61,7 +71,7 @@ const Saledropdown = () => {
                             <ul className="flex flex-col border-l border-[#3B4648] pb-2.5">
                                 <li className="relative pl-5 py-five pr-five">
                                     <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
-                                    <NavLink to="/addsalesterms" end className='hover:text-white'>Add Sales Terms</NavLink>
+                                    <NavLink to="/manageproduct" end className='hover:text-white'>Manage Product</NavLink>
                                 </li>
                             </ul>
                         </article>
@@ -72,4 +82,4 @@ const Saledropdown = () => {
     )
 }
 
-export default Saledropdown
+export default Productdropdown
