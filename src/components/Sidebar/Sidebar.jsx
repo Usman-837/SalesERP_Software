@@ -6,6 +6,7 @@ import { useSelector } from "react-redux"
 import { NavLink } from 'react-router-dom'
 import Saledropdown from './Saledropdown'
 import Customerdropdown from './Customerdropdown'
+import Supplierdropdown from './Supplierdropdown'
 
 export default function Sidebar() {
   const isOpen = useSelector((state) => state.sidebar.isOpen);
@@ -46,6 +47,10 @@ export default function Sidebar() {
           {/* Customer Menu */}
           <div>
             <Customerdropdown/>
+          </div>
+          {/* Supplier Menu */}
+          <div>
+            <Supplierdropdown/>
           </div>
         </div>
       }
