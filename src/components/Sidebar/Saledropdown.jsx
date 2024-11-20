@@ -4,6 +4,22 @@ import { MdKeyboardArrowLeft } from "react-icons/md"
 import { NavLink } from 'react-router-dom'
 
 const Saledropdown = () => {
+
+    const Sale = [
+        {
+            id: 1,
+            title: "Manage Sale"
+        },
+        {
+            id: 2,
+            title: "POS Sale"
+        },
+        {
+            id: 3,
+            title: "Sales Terms List"
+        },
+    ]
+
     return (
         <>
             <ul className="flex flex-col gap-2 text-menucolor text-fifteen">
@@ -21,26 +37,28 @@ const Saledropdown = () => {
 
                         {/* Dropdown content */}
                         <article className="overflow-hidden transition-all duration-1000 ease-in-out max-h-0 group-open:max-h-64 pl-9 bg-dropdownbg text-sm">
-                            <ul className="flex flex-col border-l border-[#3B4648] pt-five pb-2.5">
-                                <li className="relative pl-5 pt-five pr-five pb-five">
+                            <ul className="flex flex-col border-l border-[#3B4648] pt-five">
+                                <li className="relative pl-5 py-five pr-five">
                                     <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
                                     <NavLink to="/newsale" end className='hover:text-white'>New Sale</NavLink>
                                 </li>
-                                <li className="relative pl-5 pt-five pr-five pb-five">
+                            </ul>
+                            {
+                                Sale.map((data) => {
+                                    return (
+                                        <ul key={data.id} className="flex flex-col border-l border-[#3B4648]">
+                                            <li className="relative pl-5 py-five pr-five">
+                                                <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
+                                                <NavLink to="/newsale" end className='hover:text-white'>{data.title}</NavLink>
+                                            </li>
+                                        </ul>
+                                    )
+                                })
+                            }
+                            <ul className="flex flex-col border-l border-[#3B4648] pb-2.5">
+                                <li className="relative pl-5 py-five pr-five">
                                     <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
-                                    <NavLink to="/managesale" end className='hover:text-white'>Manage Sale</NavLink>
-                                </li>
-                                <li className="relative pl-5 pt-five pr-five pb-five">
-                                    <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
-                                    <NavLink to="/possale" end className='hover:text-white'>POS Sale</NavLink>
-                                </li>
-                                <li className="relative pl-5 pt-five pr-five pb-five">
-                                    <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
-                                    <NavLink to="/salestermslist" end className='hover:text-white'>Sales Terms List</NavLink>
-                                </li>
-                                <li className="relative pl-5 pt-five pr-five pb-five">
-                                    <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
-                                    <NavLink to="/addsalesterms" end className='hover:text-white'>Add Sales Terms</NavLink>
+                                    <NavLink to="/newsale" end className='hover:text-white'>Add Sales Terms</NavLink>
                                 </li>
                             </ul>
                         </article>
