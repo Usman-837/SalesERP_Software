@@ -1,22 +1,25 @@
 import React from 'react'
 import { FaBalanceScale } from "react-icons/fa"
 import { MdKeyboardArrowLeft } from "react-icons/md"
-import { NavLink } from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 
 const Saledropdown = () => {
 
     const Sale = [
         {
             id: 1,
-            title: "Manage Sale"
+            title: "Manage Sale",
+            route: "/managesale"
         },
         {
             id: 2,
-            title: "POS Sale"
+            title: "POS Sale",
+            route: "/possale"
         },
         {
             id: 3,
-            title: "Sales Terms List"
+            title: "Sales Terms List",
+            route: "/salestermslist"
         },
     ]
 
@@ -25,7 +28,7 @@ const Saledropdown = () => {
             <ul className="flex flex-col gap-2 text-menucolor text-fifteen">
                 <li>
                     <details className="group">
-                        <summary className="flex items-center justify-between gap-2 p-2 font-medium marker:content-none cursor-pointer hover:bg-[#3E454C] hover:text-white pr-3 pl-fifteen">
+                        <summary className="flex items-center justify-between gap-2 p-2 font-medium marker:content-none cursor-pointer hover:bg-[#3E454C] hover:text-white pr-3 pl-fifteen group-open:bg-[#3E454C] group-open:text-white">
                             <div className="flex items-center">
                                 <FaBalanceScale className="mr-2.5 text-lg" />
                                 <NavLink to="/sale" end>
@@ -49,7 +52,7 @@ const Saledropdown = () => {
                                         <ul key={data.id} className="flex flex-col border-l border-[#3B4648]">
                                             <li className="relative pl-5 py-five pr-five">
                                                 <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
-                                                <NavLink to="/newsale" end className='hover:text-white'>{data.title}</NavLink>
+                                                <NavLink to={data.route} end className='hover:text-white'>{data.title}</NavLink>
                                             </li>
                                         </ul>
                                     )
@@ -58,7 +61,7 @@ const Saledropdown = () => {
                             <ul className="flex flex-col border-l border-[#3B4648] pb-2.5">
                                 <li className="relative pl-5 py-five pr-five">
                                     <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
-                                    <NavLink to="/newsale" end className='hover:text-white'>Add Sales Terms</NavLink>
+                                    <NavLink to="/addsalesterms" end className='hover:text-white'>Add Sales Terms</NavLink>
                                 </li>
                             </ul>
                         </article>
