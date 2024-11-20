@@ -9,10 +9,10 @@ const Customerdropdown = () => {
             <ul className="flex flex-col gap-2 text-menucolor text-fifteen">
                 <li>
                     <details className="group">
-                        <summary className="flex items-center justify-between gap-2 p-2 font-medium marker:content-none cursor-pointer hover:bg-[#3E454C] hover:text-white pr-3 pl-fifteen">
+                        <summary className="flex items-center justify-between gap-2 p-2 font-medium marker:content-none cursor-pointer hover:bg-[#3E454C] hover:text-white pr-3 pl-fifteen group-open:bg-[#3E454C] group-open:text-white">
                             <div className="flex items-center">
                                 <HiOutlineUserCircle className="mr-2.5 text-lg" />
-                                <NavLink to="/sale" end>
+                                <NavLink to="/customer" end>
                                     Customer
                                 </NavLink>
                             </div>
@@ -24,11 +24,11 @@ const Customerdropdown = () => {
                             <ul className="flex flex-col border-l border-[#3B4648] pt-five pb-2.5">
                                 <li className="relative pl-5 pt-five pr-five pb-five">
                                     <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
-                                    <NavLink to="/newsale" end className='hover:text-white'>Add Customer</NavLink>
+                                    <NavLink to="/addcustomer" end className='hover:text-white'>Add Customer</NavLink>
                                 </li>
                                 <li className="relative pl-5 pt-five pr-five pb-five">
                                     <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
-                                    <NavLink to="/managesale" end className='hover:text-white'>Customer List</NavLink>
+                                    <NavLink to="/customerlist" end className='hover:text-white'>Customer List</NavLink>
                                 </li>
                             </ul>
                         </article>
