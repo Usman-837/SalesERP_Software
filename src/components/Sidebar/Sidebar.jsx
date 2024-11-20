@@ -4,7 +4,8 @@ import profile from "../../assets/profile.jpg"
 import { TfiDashboard } from "react-icons/tfi"
 import { useSelector } from "react-redux"
 import { NavLink } from 'react-router-dom'
-import Sale from './Saledropdown'
+import Saledropdown from './Saledropdown'
+import Customerdropdown from './Customerdropdown'
 
 export default function Sidebar() {
   const isOpen = useSelector((state) => state.sidebar.isOpen);
@@ -40,7 +41,11 @@ export default function Sidebar() {
           </div>
           {/* Sale Menu */}
           <div>
-            <Sale/>
+            <Saledropdown/>
+          </div>
+          {/* Customer Menu */}
+          <div>
+            <Customerdropdown/>
           </div>
         </div>
       }
