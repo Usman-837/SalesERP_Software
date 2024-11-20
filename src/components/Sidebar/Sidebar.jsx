@@ -3,6 +3,7 @@ import logo from "../../assets/logo.png"
 import profile from "../../assets/profile.jpg"
 import { TfiDashboard } from "react-icons/tfi"
 import { useSelector } from "react-redux"
+import { NavLink } from 'react-router-dom'
 
 export default function Sidebar() {
   const isOpen = useSelector((state) => state.sidebar.isOpen);
@@ -29,9 +30,11 @@ export default function Sidebar() {
             </div>
           </div>
           {/* Sidebar Menu */}
-          <div className='flex items-center text-menucolor text-fifteen py-3 pr-five pl-fifteen'>
-            <TfiDashboard className='mr-2.5' />
-            <span>Dashboard</span>
+          <div className='flex items-center text-menucolor text-fifteen py-3 pr-five pl-fifteen hover:bg-[#3E454C] hover:text-white'>
+            <div className='flex items-center'>
+              <TfiDashboard className='mr-2.5' />
+              <NavLink to="/" end >Dashboard</NavLink>
+            </div>
           </div>
         </div>
       }
