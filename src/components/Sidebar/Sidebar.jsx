@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom'
 import Saledropdown from './Saledropdown'
 import Customerdropdown from './Customerdropdown'
 import Supplierdropdown from './Supplierdropdown'
+import Productdropdown from './Productdropdown'
 
 export default function Sidebar() {
   const isOpen = useSelector((state) => state.sidebar.isOpen);
@@ -51,6 +52,10 @@ export default function Sidebar() {
           {/* Supplier Menu */}
           <div>
             <Supplierdropdown/>
+          </div>
+          {/* Product Menu */}
+          <div>
+            <Productdropdown/>
           </div>
         </div>
       }
