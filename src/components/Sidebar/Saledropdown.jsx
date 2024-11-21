@@ -25,7 +25,7 @@ const Saledropdown = () => {
 
     return (
         <>
-            <ul className="flex flex-col gap-2 text-menucolor text-fifteen">
+            <ul className="text-menucolor text-fifteen">
                 <li>
                     <details className="group">
                         <summary className="flex items-center justify-between marker:content-none cursor-pointer hover:bg-[#3E454C] hover:text-white pr-3 pl-fifteen py-3 group-open:bg-[#3E454C] group-open:text-white">
