@@ -9,7 +9,7 @@ const Customerdropdown = () => {
             <ul className="flex flex-col gap-2 text-menucolor text-fifteen">
                 <li>
                     <details className="group">
-                        <summary className="flex items-center justify-between gap-2 p-2 font-medium marker:content-none cursor-pointer hover:bg-[#3E454C] hover:text-white pr-3 pl-fifteen group-open:bg-[#3E454C] group-open:text-white">
+                        <summary className="flex items-center justify-between marker:content-none cursor-pointer hover:bg-[#3E454C] hover:text-white pr-3 pl-fifteen py-3 group-open:bg-[#3E454C] group-open:text-white">
                             <div className="flex items-center">
                                 <HiOutlineUserCircle className="mr-2.5 text-lg" />
                                 <span>Customer</span>
