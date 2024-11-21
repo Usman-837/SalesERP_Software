@@ -12,9 +12,7 @@ const Supplierdropdown = () => {
                         <summary className="flex items-center justify-between gap-2 p-2 font-medium marker:content-none cursor-pointer hover:bg-[#3E454C] hover:text-white pr-3 pl-fifteen group-open:bg-[#3E454C] group-open:text-white">
                             <div className="flex items-center">
                                 <FaUserSecret className="mr-2.5 text-md" />
-                                <NavLink to="/supplier" end>
-                                    Supplier
-                                </NavLink>
+                                <span>Supplier</span>
                             </div>
                             <MdKeyboardArrowLeft className="w-5 h-5 text-gray-500 transition-transform duration-500 ease-in-out group-open:rotate-[-90deg]" />
                         </summary>
