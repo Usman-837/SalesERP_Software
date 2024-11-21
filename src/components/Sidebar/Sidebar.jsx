@@ -12,6 +12,7 @@ import Purchasedropdown from './Purchasedropdown'
 import Stockdropdown from './Stockdropdown'
 import Accountsdropdown from './Accountsdropdown'
 import Reportdropdown from './Reportdropdown'
+import Bankdropdown from './Bankdropdown'
 
 export default function Sidebar() {
   const isOpen = useSelector((state) => state.sidebar.isOpen);
@@ -76,6 +77,10 @@ export default function Sidebar() {
           {/* Report Menu */}
           <div>
             <Reportdropdown/>
+          </div>
+          {/* Bank Menu */}
+          <div>
+            <Bankdropdown/>
           </div>
         </div>
       }
