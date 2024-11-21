@@ -11,6 +11,7 @@ import Productdropdown from './Productdropdown'
 import Purchasedropdown from './Purchasedropdown'
 import Stockdropdown from './Stockdropdown'
 import Accountsdropdown from './Accountsdropdown'
+import Reportdropdown from './Reportdropdown'
 
 export default function Sidebar() {
   const isOpen = useSelector((state) => state.sidebar.isOpen);
@@ -46,31 +47,35 @@ export default function Sidebar() {
           </div>
           {/* Sale Menu */}
           <div>
-            <Saledropdown/>
+            <Saledropdown />
           </div>
           {/* Customer Menu */}
           <div>
-            <Customerdropdown/>
+            <Customerdropdown />
           </div>
           {/* Supplier Menu */}
           <div>
-            <Supplierdropdown/>
+            <Supplierdropdown />
           </div>
           {/* Product Menu */}
           <div>
-            <Productdropdown/>
+            <Productdropdown />
           </div>
-           {/* Purchase Menu */}
-           <div>
-            <Purchasedropdown/>
+          {/* Purchase Menu */}
+          <div>
+            <Purchasedropdown />
           </div>
-           {/* Stockdropdown Menu */}
-           <div>
-            <Stockdropdown/>
+          {/* Stockdropdown Menu */}
+          <div>
+            <Stockdropdown />
           </div>
           {/* Accounts Menu */}
           <div>
-            <Accountsdropdown/>
+            <Accountsdropdown />
+          </div>
+          {/* Report Menu */}
+          <div>
+            <Reportdropdown/>
           </div>
         </div>
       }
