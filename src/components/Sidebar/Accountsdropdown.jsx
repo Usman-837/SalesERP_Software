@@ -29,7 +29,7 @@ const Accountsdropdown = () => {
         {
             id: 5,
             title: "Debit Voucher",
-            route: "/debitcoucher"
+            route: "/debitvoucher"
         },
         {
             id: 6,

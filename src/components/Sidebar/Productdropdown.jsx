@@ -9,7 +9,7 @@ const Productdropdown = () => {
         {
             id: 1,
             title: "Category List",
-            route: "/cateforylist"
+            route: "/categorylist"
         },
         {
             id: 2,
@@ -51,7 +51,7 @@ const Productdropdown = () => {
                             <ul className="flex flex-col border-l border-[#3B4648] pt-five">
                                 <li className="relative pl-5 py-five pr-five">
                                     <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
-                                    <NavLink to="/newsale" end className='hover:text-white'>Add Category</NavLink>
+                                    <NavLink to="/addcategory" end className='hover:text-white'>Add Category</NavLink>
                                 </li>
                             </ul>
                             {
