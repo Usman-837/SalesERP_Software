@@ -8,12 +8,15 @@ import Saledropdown from './Saledropdown'
 import Customerdropdown from './Customerdropdown'
 import Supplierdropdown from './Supplierdropdown'
 import Productdropdown from './Productdropdown'
+import Purchasedropdown from './Purchasedropdown'
+import Stockdropdown from './Stockdropdown'
+import Accountsdropdown from './Accountsdropdown'
 
 export default function Sidebar() {
   const isOpen = useSelector((state) => state.sidebar.isOpen);
 
   return (
-    <aside className={`bg-custom-black fixed top-0 left-0 max-md:top-[123px] max-sm:z-40 transition-all duration-400 max-sm:max-w-screen-sm ${isOpen ? 'max-w-250 w-full' : 'w-0'}`}>
+    <aside className={`bg-custom-black absolute top-0 left-0 max-md:top-[123px] max-sm:z-40 transition-all duration-400 max-sm:max-w-screen-sm ${isOpen ? 'max-w-250 w-full' : 'w-0'}`}>
       {
         isOpen && <div className='h-svh'>
           {/* logo */}
@@ -56,6 +59,18 @@ export default function Sidebar() {
           {/* Product Menu */}
           <div>
             <Productdropdown/>
+          </div>
+           {/* Purchase Menu */}
+           <div>
+            <Purchasedropdown/>
+          </div>
+           {/* Stockdropdown Menu */}
+           <div>
+            <Stockdropdown/>
+          </div>
+          {/* Accounts Menu */}
+          <div>
+            <Accountsdropdown/>
           </div>
         </div>
       }
