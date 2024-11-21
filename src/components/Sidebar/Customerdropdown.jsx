@@ -12,9 +12,7 @@ const Customerdropdown = () => {
                         <summary className="flex items-center justify-between gap-2 p-2 font-medium marker:content-none cursor-pointer hover:bg-[#3E454C] hover:text-white pr-3 pl-fifteen group-open:bg-[#3E454C] group-open:text-white">
                             <div className="flex items-center">
                                 <HiOutlineUserCircle className="mr-2.5 text-lg" />
-                                <NavLink to="/customer" end>
-                                    Customer
-                                </NavLink>
+                                <span>Customer</span>
                             </div>
                             <MdKeyboardArrowLeft className="w-5 h-5 text-gray-500 transition-transform duration-500 ease-in-out group-open:rotate-[-90deg]" />
                         </summary>
