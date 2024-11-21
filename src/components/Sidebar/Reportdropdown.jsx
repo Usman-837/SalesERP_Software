@@ -1,91 +1,81 @@
 import React from 'react'
-import { FaRegMoneyBillAlt } from "react-icons/fa"
+import { GoBook } from "react-icons/go"
 import { MdKeyboardArrowLeft } from "react-icons/md"
 import { NavLink } from 'react-router-dom'
 
-const Accountsdropdown = () => {
+const Reportdropdown = () => {
 
     const Sale = [
         {
             id: 1,
-            title: "Sub Account List",
-            route: "/subaccountlist"
+            title: "Closing Report",
+            route: "/closingreport"
         },
         {
             id: 2,
-            title: "Predefined Accounts",
-            route: "/predefinedaccounts"
+            title: "Todays Report",
+            route: "/todaysreport"
         },
         {
             id: 3,
-            title: "Financial Year",
-            route: "/financialyear"
+            title: "Todays Customer Receipt",
+            route: "/todayscustomerreceipt"
         },
         {
             id: 4,
-            title: "Opening Balance",
-            route: "/openingbalance"
+            title: "Sales Report",
+            route: "/salesreport"
         },
         {
             id: 5,
-            title: "Debit Voucher",
-            route: "/debitvoucher"
+            title: "User Wise Sales Report",
+            route: "/userwisesalesreport"
         },
         {
             id: 6,
-            title: "Credit Voucher",
-            route: "/creditvoucher"
+            title: "Due Report",
+            route: "/duereport"
         },
         {
             id: 7,
-            title: "Contra Voucher",
-            route: "/contravoucher"
+            title: "Shipping Cost Report",
+            route: "/shippingcostreport"
         },
         {
             id: 8,
-            title: "Journal Voucher",
-            route: "/journalvoucher"
+            title: "Purchase Report",
+            route: "/purchasereport"
         },
         {
             id: 9,
-            title: "Bank Reconciliation",
-            route: "/bankreconciliation"
+            title: "Purchase Report (Category wise)",
+            route: "/purchasereportcategorywise"
         },
         {
             id: 10,
-            title: "Add Payment Method",
-            route: "/addpaymentmethod"
+            title: "Sales Report (Product wise)",
+            route: "/salesreportproductwise"
         },
         {
             id: 11,
-            title: "Payment Method List",
-            route: "/paymentmethodlist"
+            title: "Sales Report (Category wise)",
+            route: "/salesreportcategorywise"
         },
         {
             id: 12,
-            title: "Supplier Payment",
-            route: "/supplierpayment"
+            title: "Sales Return",
+            route: "/salesreturn"
         },
         {
             id: 13,
-            title: "Customer Receive",
-            route: "/customerreceive"
+            title: "Supplier Return",
+            route: "/supplierreturn"
         },
         {
             id: 14,
-            title: "Service Payment",
-            route: "/servicepayment"
-        },
-        {
-            id: 15,
-            title: "Cash Adjustment",
-            route: "/cashadjustment"
-        },
-        {
-            id: 16,
-            title: "Vouchar Approval",
-            route: "/voucharapproval"
-        },
+            title: "TAX Report",
+            route: "/taxreport"
+        }
 
     ]
 
@@ -96,8 +86,8 @@ const Accountsdropdown = () => {
                     <details className="group">
                         <summary className="flex items-center justify-between marker:content-none cursor-pointer hover:bg-[#3E454C] hover:text-white pr-3 pl-fifteen py-3 group-open:bg-[#3E454C] group-open:text-white">
                             <div className="flex items-center">
-                                <FaRegMoneyBillAlt className="mr-2.5 text-lg" />
-                                <span>Accounts</span>
+                                <GoBook className="mr-2.5 text-lg" />
+                                <span>Report</span>
                             </div>
                             <MdKeyboardArrowLeft className="w-5 h-5 text-gray-500 transition-transform duration-500 ease-in-out group-open:rotate-[-90deg]" />
                         </summary>
@@ -107,7 +97,7 @@ const Accountsdropdown = () => {
                             <ul className="flex flex-col border-l border-[#3B4648] pt-five">
                                 <li className="relative pl-5 py-five pr-five">
                                     <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
-                                    <NavLink to="/chartaccount" end className='hover:text-white'>Chart of Account</NavLink>
+                                    <NavLink to="/closing" end className='hover:text-white'>Closing</NavLink>
                                 </li>
                             </ul>
                             {
@@ -125,7 +115,7 @@ const Accountsdropdown = () => {
                             <ul className="flex flex-col border-l border-[#3B4648] pb-2.5">
                                 <li className="relative pl-5 py-five pr-five">
                                     <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
-                                    <span className='hover:text-white'>Report</span>
+                                    <NavLink to="/profitreportsalewise" className='hover:text-white'>Profit Report (Sale Wise)</NavLink>
                                 </li>
                             </ul>
                         </article>
@@ -136,4 +126,4 @@ const Accountsdropdown = () => {
     )
 }
 
-export default Accountsdropdown
+export default Reportdropdown

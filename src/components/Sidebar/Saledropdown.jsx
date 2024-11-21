@@ -37,7 +37,7 @@ const Saledropdown = () => {
                         </summary>
 
                         {/* Dropdown content */}
-                        <article className="overflow-hidden transition-all duration-1000 ease-in-out max-h-0 group-open:max-h-64 pl-9 bg-dropdownbg text-sm">
+                        <article className="transition-all duration-1000 ease-in-out group-open:max-h-auto pl-9 bg-dropdownbg text-sm">
                             <ul className="flex flex-col border-l border-[#3B4648] pt-five">
                                 <li className="relative pl-5 py-five pr-five">
                                     <span className="absolute left-0 top-3.5 w-4 border border-[#3B4648]"></span>
