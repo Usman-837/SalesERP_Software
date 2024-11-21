@@ -9,6 +9,7 @@ import Customerdropdown from './Customerdropdown'
 import Supplierdropdown from './Supplierdropdown'
 import Productdropdown from './Productdropdown'
 import Purchasedropdown from './Purchasedropdown'
+import Stockdropdown from './Stockdropdown'
 
 export default function Sidebar() {
   const isOpen = useSelector((state) => state.sidebar.isOpen);
@@ -61,6 +62,10 @@ export default function Sidebar() {
            {/* Purchase Menu */}
            <div>
             <Purchasedropdown/>
+          </div>
+           {/* Stockdropdown Menu */}
+           <div>
+            <Stockdropdown/>
           </div>
         </div>
       }
