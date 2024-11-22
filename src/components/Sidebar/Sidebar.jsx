@@ -16,6 +16,7 @@ import Bankdropdown from './Bankdropdown'
 import Servicedropdown from './Servicedropdown'
 import Quotationdropdown from './Quotationdropdown'
 import Taxdropdown from './Taxdropdown'
+import Returndropdown from './Returndropdown'
 
 export default function Sidebar() {
   const isOpen = useSelector((state) => state.sidebar.isOpen);
@@ -96,6 +97,10 @@ export default function Sidebar() {
            {/* TAX Menu */}
            <div>
             <Taxdropdown/>
+          </div>
+          {/* Return Menu */}
+          <div>
+            <Returndropdown/>
           </div>
         </div>
       }
