@@ -18,6 +18,7 @@ import Quotationdropdown from './Quotationdropdown'
 import Taxdropdown from './Taxdropdown'
 import Returndropdown from './Returndropdown'
 import { FaAdn } from "react-icons/fa"
+import Humandropdown from './Humandropdown'
 
 export default function Sidebar() {
   const isOpen = useSelector((state) => state.sidebar.isOpen);
@@ -82,6 +83,10 @@ export default function Sidebar() {
           {/* Report Menu */}
           <div>
             <Reportdropdown/>
+          </div>
+           {/* Human Menu */}
+           <div>
+            <Humandropdown/>
           </div>
           {/* Bank Menu */}
           <div>
