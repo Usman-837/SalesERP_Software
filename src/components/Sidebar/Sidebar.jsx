@@ -17,6 +17,7 @@ import Servicedropdown from './Servicedropdown'
 import Quotationdropdown from './Quotationdropdown'
 import Taxdropdown from './Taxdropdown'
 import Returndropdown from './Returndropdown'
+import { FaAdn } from "react-icons/fa"
 
 export default function Sidebar() {
   const isOpen = useSelector((state) => state.sidebar.isOpen);
@@ -101,6 +102,12 @@ export default function Sidebar() {
           {/* Return Menu */}
           <div>
             <Returndropdown/>
+          </div>
+          <div className='flex items-center text-menucolor text-fifteen py-2.5 pr-five pl-fifteen hover:bg-[#3E454C] hover:text-white'>
+            <div className='flex items-center'>
+              <FaAdn className='mr-2.5 text-md' />
+              <NavLink to="/addons" end >Add-ons</NavLink>
+            </div>
           </div>
         </div>
       }
